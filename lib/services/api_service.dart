@@ -5,7 +5,7 @@ import 'package:newsapp/model/article_model.dart';
 
 class ApiService {
   final endPointUrl =
-      "https://newsapi.org/v2/top-headlines?country=au&apiKey=e12dcd7ad7084d6ea57296ba0f9a1261";
+      "https://newsapi.org/v2/top-headlines?country=au&apiKey=[YOUR_API_KEY]";
 
   Future<List<Article>> getArticle() async {
     Response res = await get(endPointUrl);
